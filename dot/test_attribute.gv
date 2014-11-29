@@ -1,0 +1,16 @@
+/* dot -T png test2.gv -o a.png */
+/* 属性 */
+digraph g
+{
+    // node name
+    a [label = "Foo"];
+
+    // node shape
+    b [shape = box];
+
+    // edge color
+    a -> b -> c[color = blue];
+
+    // edge shape
+    b -> d[shape = dotted];
+}

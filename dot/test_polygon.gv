@@ -1,0 +1,13 @@
+/* dot -T png test2.gv -o a.png */
+/* 有向图 */
+digraph g
+{
+    a -> b -> c;
+    b -> d;
+
+    a[shape=polygon,sides=5,peripheries=3,color=lightblue,style=filled]
+    c[shape=polygon,sides=4,skew=0.4,label="hello world"]
+
+    d[shape=invtriangle,orientation=30]
+    e[shape=polygon,sides=4,distortion=0.7]
+}

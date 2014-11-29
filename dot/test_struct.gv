@@ -1,0 +1,12 @@
+/* dot -T png test2.gv -o a.png */
+/* 有向图 */
+digraph g
+{
+    node[shape=record]
+    struct1[label="left|middle|right"]
+    struct2[label="one|two"]
+    struct3[label="hello\nworld|{b|{c|d|e}|f}|g|h"]
+
+    struct1 -> struct2
+    struct1 -> struct3 
+}

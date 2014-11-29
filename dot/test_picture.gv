@@ -1,0 +1,20 @@
+/* dot -T png test2.gv -o a.png */
+/* 无向图 */
+graph g
+{
+    // picture name
+    label = "I love you"
+    labelloc=b // bottom top -- t
+    labelloc=l // left
+
+    edge[decorate=true]
+
+    C--D[label="s1"]
+    C--E[label="s2"]
+    C--F[label="s3"]
+    D--E[label="s4"]
+    D--F[label="s5"]
+
+    edge[decorate=false,labelfontcolor=blue,fontcolor=red]
+    C1--D1[headlabel="c1",taillabel="d1",label="c1-d1"]
+}

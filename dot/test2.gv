@@ -1,0 +1,7 @@
+/* dot -T png test2.gv -o a.png */
+/* 有向图 */
+digraph g
+{
+    a -> b -> c;
+    b -> d;
+}
